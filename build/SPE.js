@@ -5,6 +5,8 @@
  *
  * shader-particle-engine may be freely distributed under the MIT license (See LICENSE at root of this repository.)
  */
+const THREE = require('three');
+
 /**
  * @typedef {Number} distribution
  * @property {Number} SPE.distributions.BOX Values will be distributed within a box.
@@ -87,6 +89,7 @@ if ( typeof define === 'function' && define.amd ) {
 else if ( typeof exports !== 'undefined' && typeof module !== 'undefined' ) {
     module.exports = SPE;
 }
+
 
 /**
  * A helper class for TypedArrays.
